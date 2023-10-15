@@ -1,0 +1,169 @@
+.pokemon-modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Modal Content */
+  .pokemon-modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Pokemon Thumbnail */
+  .pokemon-thumbnail {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto 10px;
+    display: block;
+  }
+  
+  /* Pokemon Name */
+  .pokemon-name {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  /* Pokemon Types */
+  .pokemon-types {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  
+  /* Pokemon Type */
+  .pokemon-type {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 5px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:none;
+    background-color: hsl(0deg 100% 50%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .close-button:hover {
+    background-color: hsl(0, 97%, 70%); 
+  }
+  
+  
+  .close-button i {
+    font-size: 18px;
+    color: #ffffff; /* Icon color */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Add some spacing between the buttons and content */
+  }
+  
+  .delete-button {
+    background-color: #ff0000; /* Red background */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Styles for the Save button */
+  .save-button {
+    background-color: #1564c2; /* Green background */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .delete-button:hover {
+    background-color: #b10101; /* Red background */
+  }
+
+  .save-button:hover {
+    background-color: #104485; /* Green background */
+  }
+
+  /* Confirmation modal container */
+.confirmation-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the modal appears above other content */
+}
+
+/* Confirmation modal content */
+.confirmation-modal-content {
+  background-color: #fff; /* White background */
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 300px; /* Adjust the max-width as needed */
+}
+
+/* Confirmation message */
+.confirmation-message {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Confirmation buttons */
+.confirm-button,
+.cancel-button {
+  background-color: #1564c2; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px; 
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* Style the Cancel button differently */
+.cancel-button {
+  background-color: #3a3a3a; /* Gray background color for Cancel button */
+}
+
+/* Center the buttons */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}

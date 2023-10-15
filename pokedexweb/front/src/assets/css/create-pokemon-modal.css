@@ -1,0 +1,130 @@
+/* create-pokemon-modal.css */
+
+/* Styles for the modal container */
+.create-pokemon-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for the modal content */
+.create-pokemon-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 400px; /* Adjust the width as needed */
+  display: flex; /* Use flexbox to align content vertically */
+  flex-direction: column; /* Stack children vertically */
+  position: relative; /* Required for absolute positioning */
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Styles for the form elements */
+.form-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for labels */
+.form-group label {
+  font-weight: bold;
+}
+
+/* Styles for input fields */
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  width: 95%; /* Let inputs fill the width of their container */
+  max-width: 100%; /* Limit input width to the available space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  outline: none; /* Remove default input outline */
+}
+
+/* Styles for the entered types */
+.entered-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+/* Styles for the type pills */
+.type-capsule {
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the remove type button */
+.remove-type {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+
+/* Styles for the Create button */
+.create-button {
+  background-color: #ff0000; /* Red color */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  align-self: flex-end; /* Align to the right within the flex container */
+}
+
+.create-button:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+.type-suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.type-suggestion {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.type-suggestion:hover {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}

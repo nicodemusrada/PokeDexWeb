@@ -1,0 +1,83 @@
+body {
+  font-family: 'Albert Sans', sans-serif;
+}
+
+/* Apply the font to specific elements as needed */
+h1, h2, h3 {
+  font-family: 'Albert Sans', sans-serif;
+}
+
+.pokemon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-card {
+  flex: 0 1 calc(24% - 5px); /* Adjust width and margin to control cards per row */
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 5px; /* Reduced margin for closer spacing */
+  text-align: center;
+}
+
+/* Media query for screens wider than 768px (adjust as needed) */
+@media (min-width: 768px) {
+  .pokemon-card {
+    flex: 0 1 calc(32% - 5px); /* Adjust width and margin to control cards per row */
+  }
+}
+
+/* Media query for screens wider than 1200px (adjust as needed) */
+@media (min-width: 1200px) {
+  .pokemon-card {
+    flex: 0 1 calc(19.5% - 5px); /* Adjust width and margin to control cards per row */
+  }
+}
+
+.pokemon-list-item-thumbnail {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.pokemon-name {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.pokemon-types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-type {
+  background-color: #bcbbbb;
+  color: #333;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+
+/* notification.css */
+.notification {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.notification.success {
+  background-color: #4caf50;
+}
+
+.notification.error {
+  background-color: #f44336;
+}
