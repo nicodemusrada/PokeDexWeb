@@ -52,5 +52,5 @@
     ```bash
     npm run dev
 
-### Frontend Configuration
-1. Open the .\pokedexweb\front\ApiConfig.js file and update the API_BASE_URL with the value of the Django local development server.
+> [!IMPORTANT] Frontend Configuration
+> Open the .\pokedexweb\front\ApiConfig.js file and update the API_BASE_URL with the value of the Django local development server.
